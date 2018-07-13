@@ -1,0 +1,14 @@
+spring:
+  primary:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jpatest?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  secondary:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.96.96:3306/test?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+ 
