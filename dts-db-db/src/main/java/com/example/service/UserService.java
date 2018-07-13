@@ -46,15 +46,17 @@ public class UserService {
 	
     @Transactional
 	public void save() {
+		//第一个数据源插入
 		User1 user1 = new User1(102,"lilei");
 		primaryUserRepository.save(user1);
 		
 		
-		
+		//第二个数据源插入
 		User2 user2 = new User2(202,"limei");
 		secondaryUserRepository.save(user2);
 		
 		if(1==1) {
+			// 测试两个数据源都回滚
 			throw new RuntimeException("error");
 		}
 	
